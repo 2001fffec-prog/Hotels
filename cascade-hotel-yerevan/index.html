@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cascade Hotel Yerevan — a family house 70 m from the Cascade</title>
+<meta name="description" content="Cascade Hotel, Yerevan: 25 quiet rooms at 10/10 Zarubyan Street, 70 metres from the Cascade Complex. Breakfast included, free Wi-Fi and parking, 24/7 café-bar. Book directly with the hotel.">
+<link rel="canonical" href="https://www.cascadehotel.am/">
+<meta name="theme-color" content="#f4efe6">
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cascade Hotel Yerevan">
+<meta property="og:title" content="Cascade Hotel Yerevan — a family house 70 m from the Cascade">
+<meta property="og:description" content="25 quiet rooms in the centre of Yerevan, with views towards Mount Ararat. Breakfast included. Book directly with the hotel.">
+<meta property="og:image" content="https://www.cascadehotel.am/eng/images/index2.jpg">
+<meta property="og:url" content="https://www.cascadehotel.am/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="hy_AM">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Structured data: facts taken from the hotel's own website -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Cascade Hotel",
+  "url": "https://www.cascadehotel.am/",
+  "image": "https://www.cascadehotel.am/eng/images/index2.jpg",
+  "telephone": "+37460400440",
+  "email": "info@cascadehotel.am",
+  "numberOfRooms": 25,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "10/10 Zarubyan Street",
+    "postalCode": "0009",
+    "addressLocality": "Yerevan",
+    "addressCountry": "AM"
+  }
+}
+</script>
+
+<!-- Fonts: Latin + Cyrillic display/body, with Noto Armenian as script fallback -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&family=Noto+Sans+Armenian:wght@400;500;600;700&family=Noto+Serif+Armenian:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ==========================================================================
+   Cascade Hotel Yerevan — single-file site
+   Concept: travertine paper, ink text, the brick red of the hotel's emblem.
+   Signature motif: the "step" — layouts climb like the Cascade stairway.
+   ========================================================================== */
+
+:root {
+  --paper: #f4efe6;
+  --paper-2: #ebe3d5;
+  --stone: #d8cdb9;
+  --ink: #1d1a16;
+  --ink-soft: #4b443a;
+  --muted: #6a6256;
+  --red: #96271f;
+  --red-dark: #771d17;
+  --night: #1a1917;
+  --night-text: #efe8db;
+  --line: rgba(29, 26, 22, .16);
+  --serif: "Cormorant Garamond", "Noto Serif Armenian", Georgia, serif;
+  --sans: "Manrope", "Noto Sans Armenian", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --gutter: clamp(18px, 4.5vw, 64px);
+  --max: 1240px;
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+
+/* Visible, consistent keyboard focus */
+:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; border-radius: 2px; }
+.dark :focus-visible { outline-color: #f0c9a8; }
+
+.skip {
+  position: absolute; left: 12px; top: -60px; z-index: 200;
+  background: var(--ink); color: var(--paper); padding: 10px 16px; text-decoration: none;
+}
+.skip:focus { top: 12px; }
+
+.wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+
+/* ---------- Type ---------- */
+.eyebrow {
+  font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--red);
+}
+.dark .eyebrow { color: #e3b594; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.04; letter-spacing: -.012em; overflow-wrap: break-word; }
+h1 { font-size: clamp(2.5rem, 7.4vw, 5.9rem); }
+h2 { font-size: clamp(2.05rem, 5vw, 3.9rem); }
+h3 { font-size: clamp(1.55rem, 2.6vw, 2.05rem); line-height: 1.12; }
+h1 em, h2 em { font-style: italic; color: var(--red); }
+.dark h2 em { color: #e3b594; }
+/* Armenian and Cyrillic glyphs run wider and taller: ease the display sizes */
+html[lang="hy"] h1 { font-size: clamp(2rem, 5.6vw, 4.5rem); line-height: 1.14; letter-spacing: 0; }
+html[lang="hy"] h2 { font-size: clamp(1.75rem, 4vw, 3.1rem); line-height: 1.16; letter-spacing: 0; }
+html[lang="hy"] h3 { font-size: clamp(1.35rem, 2.2vw, 1.75rem); line-height: 1.22; }
+html[lang="ru"] h1 { font-size: clamp(2.2rem, 6.2vw, 5rem); line-height: 1.08; }
+html[lang="ru"] h2 { font-size: clamp(1.9rem, 4.4vw, 3.4rem); }
+.lead { font-size: clamp(1.02rem, 1.5vw, 1.2rem); color: var(--ink-soft); max-width: 46ch; }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 48px; padding: 12px 26px;
+  border: 1px solid var(--red); background: var(--red); color: #fff;
+  font-size: 14px; font-weight: 600; letter-spacing: .05em; text-decoration: none; cursor: pointer;
+  transition: background .25s var(--ease), color .25s var(--ease), transform .25s var(--ease);
+}
+.btn:hover { background: var(--red-dark); border-color: var(--red-dark); transform: translateY(-1px); }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+.btn.ghost:hover { background: var(--ink); color: var(--paper); }
+.dark .btn.ghost { color: var(--night-text); border-color: rgba(239, 232, 219, .55); }
+.dark .btn.ghost:hover { background: var(--night-text); color: var(--night); }
+
+/* ---------- Header ---------- */
+.header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(244, 239, 230, .9);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color .3s, box-shadow .3s;
+}
+.header.scrolled { border-color: var(--line); box-shadow: 0 6px 24px rgba(29, 26, 22, .06); }
+.header .wrap { display: flex; align-items: center; gap: 20px; height: 70px; }
+.brand { display: flex; align-items: baseline; gap: 8px; text-decoration: none; margin-right: auto; white-space: nowrap; }
+.brand b { font-family: var(--serif); font-weight: 600; font-size: 27px; letter-spacing: .01em; line-height: 1; }
+.brand span { font-size: 10px; font-weight: 700; letter-spacing: .26em; text-transform: uppercase; color: var(--red); }
+.nav { display: flex; gap: clamp(14px, 2vw, 28px); }
+.nav a { font-size: 14px; font-weight: 500; text-decoration: none; padding: 8px 0; position: relative; }
+.nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: 2px; height: 1px; background: var(--red); transition: right .3s var(--ease); }
+.nav a:hover::after, .nav a:focus-visible::after { right: 0; }
+.lang { display: flex; border: 1px solid var(--line); }
+.lang button {
+  background: none; border: 0; padding: 7px 9px; min-width: 38px; min-height: 36px;
+  font-size: 12px; font-weight: 700; letter-spacing: .06em; cursor: pointer; color: var(--muted);
+}
+.lang button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.header .btn { min-height: 42px; padding: 9px 20px; }
+.menu-btn { display: none; width: 44px; height: 44px; border: 1px solid var(--line); background: none; cursor: pointer; padding: 0; }
+.menu-btn span { display: block; width: 18px; height: 1.5px; background: var(--ink); margin: 5px auto; transition: transform .3s var(--ease), opacity .2s; }
+.menu-btn[aria-expanded="true"] span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.menu-btn[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.menu-btn[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+@media (max-width: 1020px) {
+  .menu-btn { display: block; }
+  .nav {
+    position: absolute; left: 0; right: 0; top: 70px;
+    flex-direction: column; gap: 0; padding: 6px var(--gutter) 18px;
+    background: var(--paper); border-bottom: 1px solid var(--line);
+    display: none;
+  }
+  .nav.open { display: flex; }
+  .nav a { padding: 14px 0; font-size: 16px; border-bottom: 1px solid var(--line); }
+  .nav a::after { display: none; }
+}
+@media (max-width: 560px) {
+  .header .wrap { gap: 8px; height: 62px; }
+  .nav { top: 62px; }
+  .brand b { font-size: 22px; }
+  .brand span { display: none; }
+  .lang button { padding: 6px 5px; min-width: 31px; font-size: 11px; }
+  .header .btn { padding: 8px 12px; font-size: 13px; letter-spacing: .02em; }
+  .menu-btn { width: 40px; height: 40px; flex: 0 0 40px; }
+}
+
+/* ---------- Hero: text left, three photographs climbing like steps ---------- */
+.hero { padding: clamp(36px, 7vw, 92px) 0 clamp(48px, 7vw, 96px); position: relative; }
+.hero > .wrap { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+.hero h1 { margin: 18px 0 24px; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.steps-art { display: grid; grid-template-columns: repeat(12, 1fr); grid-template-rows: repeat(12, 1fr); aspect-ratio: 1 / 1.02; }
+.steps-art figure { overflow: hidden; background: var(--stone); box-shadow: 0 24px 50px -24px rgba(29, 26, 22, .45); }
+.steps-art img { width: 100%; height: 100%; object-fit: cover; }
+.steps-art .s1 { grid-column: 1 / 8; grid-row: 1 / 7; }
+.steps-art .s2 { grid-column: 4 / 11; grid-row: 4 / 10; border: 6px solid var(--paper); }
+.steps-art .s3 { grid-column: 7 / 13; grid-row: 8 / 13; border: 6px solid var(--paper); }
+
+/* Fact strip under the hero */
+.facts { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.facts ul { display: grid; grid-template-columns: repeat(4, 1fr); }
+.facts li { padding: 26px 20px 24px 0; }
+.facts li + li { padding-left: 24px; border-left: 1px solid var(--line); }
+.facts b { display: block; font-family: var(--serif); font-weight: 500; font-size: clamp(1.9rem, 3.4vw, 2.9rem); line-height: 1; }
+.facts span { display: block; margin-top: 8px; font-size: 13px; color: var(--muted); }
+
+@media (max-width: 900px) {
+  .hero > .wrap { grid-template-columns: 1fr; }
+  .steps-art { max-width: 520px; width: 100%; margin: 0 auto; }
+  .facts ul { grid-template-columns: repeat(2, 1fr); }
+  .facts li { padding: 20px 12px 18px 0; }
+  .facts li + li { padding-left: 0; border-left: 0; }
+  .facts li:nth-child(even) { padding-left: 18px; border-left: 1px solid var(--line); }
+  .facts li:nth-child(n+3) { border-top: 1px solid var(--line); }
+}
+
+/* ---------- Sections ---------- */
+section { padding: clamp(60px, 9vw, 128px) 0; }
+.sec-head { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; margin-bottom: clamp(32px, 5vw, 60px); max-width: 780px; }
+.num { font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--muted); }
+
+/* Story */
+.story .wrap { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(28px, 6vw, 96px); align-items: start; }
+.story figure { position: relative; }
+.story figure img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.story figcaption { font-size: 12.5px; color: var(--muted); margin-top: 10px; }
+.story p + p { margin-top: 18px; }
+.story .body p { color: var(--ink-soft); font-size: 1.05rem; max-width: 56ch; }
+.story .body p.drop::first-letter { font-family: var(--serif); font-size: 3.4em; float: left; line-height: .82; padding: 6px 10px 0 0; color: var(--red); }
+html[lang="hy"] .story .body p.drop::first-letter { font-size: 2.9em; line-height: .95; }
+@media (max-width: 860px) { .story .wrap { grid-template-columns: 1fr; } }
+
+/* Rooms */
+.rooms { background: var(--paper-2); }
+.room { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(22px, 5vw, 72px); align-items: center; padding: clamp(26px, 4vw, 48px) 0; border-top: 1px solid var(--line); }
+.room:nth-of-type(even) .room-img { order: 2; }
+.room-img { overflow: hidden; background: var(--stone); }
+.room-img img { width: 100%; aspect-ratio: 5 / 4; object-fit: cover; transition: transform 1.2s var(--ease); }
+.room:hover .room-img img { transform: scale(1.035); }
+.room .tag { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.room h3 { margin: 10px 0 14px; }
+.room p { color: var(--ink-soft); max-width: 48ch; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 22px; }
+.chips li { font-size: 13px; padding: 6px 12px; border: 1px solid var(--line); background: rgba(255, 255, 255, .35); }
+.link { font-weight: 600; font-size: 14px; letter-spacing: .04em; text-decoration: none; color: var(--red); border-bottom: 1px solid currentColor; padding-bottom: 3px; }
+.link:hover { color: var(--red-dark); }
+.all-rooms { margin-top: clamp(28px, 4vw, 48px); padding: clamp(22px, 3vw, 34px); border: 1px solid var(--line); background: var(--paper); display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: 22px; }
+.all-rooms h3 { font-size: 1.45rem; }
+.all-rooms ul { columns: 2; column-gap: 28px; font-size: 14.5px; color: var(--ink-soft); }
+.all-rooms li { padding: 5px 0 5px 18px; position: relative; break-inside: avoid; }
+.all-rooms li::before { content: ""; position: absolute; left: 0; top: 14px; width: 8px; height: 1px; background: var(--red); }
+.note { font-size: 13.5px; color: var(--muted); margin-top: 18px; max-width: 70ch; }
+@media (max-width: 800px) {
+  .room { grid-template-columns: 1fr; }
+  .room:nth-of-type(even) .room-img { order: 0; }
+  .all-rooms { grid-template-columns: 1fr; }
+}
+@media (max-width: 460px) { .all-rooms ul { columns: 1; } }
+
+/* Comforts (dark band) */
+.dark { background: var(--night); color: var(--night-text); }
+.comforts .grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(239, 232, 219, .18); border-left: 1px solid rgba(239, 232, 219, .18); }
+.comforts .grid li { padding: clamp(20px, 2.6vw, 34px); border-right: 1px solid rgba(239, 232, 219, .18); border-bottom: 1px solid rgba(239, 232, 219, .18); min-height: 170px; display: flex; flex-direction: column; }
+.comforts svg { width: 30px; height: 30px; stroke: #e3b594; fill: none; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; margin-bottom: auto; }
+.comforts h3 { font-size: 1.4rem; margin: 26px 0 6px; }
+.comforts p { font-size: 14px; color: rgba(239, 232, 219, .74); }
+@media (max-width: 960px) { .comforts .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 420px) { .comforts .grid li { padding: 16px; min-height: 150px; } .comforts h3 { font-size: 1.2rem; } }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: clamp(120px, 17vw, 230px); gap: clamp(8px, 1.1vw, 14px); }
+.gallery-grid button { position: relative; padding: 0; border: 0; background: var(--stone); cursor: zoom-in; overflow: hidden; }
+.gallery-grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .9s var(--ease), filter .4s; }
+.gallery-grid button:hover img, .gallery-grid button:focus-visible img { transform: scale(1.05); filter: brightness(1.06); }
+.gallery-grid .wide { grid-column: span 2; }
+.gallery-grid .tall { grid-row: span 2; }
+@media (max-width: 760px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 38vw; grid-auto-flow: dense; } .gallery-grid button:last-child { grid-column: span 2; } }
+
+/* Lightbox */
+.lb { position: fixed; inset: 0; z-index: 300; background: rgba(18, 16, 14, .95); display: none; align-items: center; justify-content: center; padding: 56px 12px; }
+.lb.open { display: flex; }
+.lb figure { max-width: min(1100px, 100%); text-align: center; }
+.lb img { max-height: calc(100vh - 150px); max-width: 100%; margin: 0 auto; }
+.lb figcaption { color: #d9d0c2; font-size: 14px; margin-top: 14px; }
+.lb button { position: absolute; width: 48px; height: 48px; border: 1px solid rgba(255, 255, 255, .35); background: rgba(0, 0, 0, .35); color: #fff; font-size: 22px; line-height: 1; cursor: pointer; }
+.lb button:hover { background: #fff; color: #000; }
+.lb button:focus-visible { outline-color: #fff; }
+.lb .x { top: 14px; right: 14px; }
+.lb .prev { left: 14px; top: 50%; transform: translateY(-50%); }
+.lb .next { right: 14px; top: 50%; transform: translateY(-50%); }
+@media (max-width: 640px) { .lb .prev, .lb .next { top: auto; bottom: 14px; transform: none; } }
+
+/* Location: distances drawn as a staircase */
+.location .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(28px, 5vw, 72px); align-items: start; }
+.stairs li { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.stairs li:nth-child(2) { margin-left: 5%; } .stairs li:nth-child(3) { margin-left: 10%; }
+.stairs li:nth-child(4) { margin-left: 15%; } .stairs li:nth-child(5) { margin-left: 20%; }
+.stairs span { font-size: 15px; color: var(--ink-soft); }
+.stairs b { font-family: var(--serif); font-weight: 500; font-size: 1.7rem; white-space: nowrap; }
+.address { margin-top: 30px; font-style: normal; font-size: 15px; color: var(--ink-soft); }
+.address strong { display: block; color: var(--ink); font-family: var(--serif); font-weight: 600; font-size: 1.4rem; }
+.map { border: 1px solid var(--line); background: var(--stone); }
+.map iframe { display: block; width: 100%; height: clamp(320px, 46vw, 520px); border: 0; filter: saturate(.75) contrast(1.02); }
+@media (max-width: 860px) { .location .wrap { grid-template-columns: 1fr; } }
+
+/* Reviews placeholder — deliberately empty until the hotel supplies real ones */
+.placeholder { border: 1px dashed rgba(29, 26, 22, .35); padding: 22px 24px; font-size: 14px; color: var(--muted); max-width: 760px; margin: clamp(36px, 5vw, 60px) auto 0; text-align: center; }
+
+/* Contact / booking request */
+.contact .wrap { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(28px, 6vw, 88px); }
+.contact-list { margin-top: 34px; }
+.contact-list li { padding: 16px 0; border-top: 1px solid rgba(239, 232, 219, .18); }
+.contact-list small { display: block; font-size: 11.5px; letter-spacing: .16em; text-transform: uppercase; color: rgba(239, 232, 219, .6); margin-bottom: 4px; }
+.contact-list a { font-family: var(--serif); font-size: clamp(1.3rem, 2.4vw, 1.75rem); text-decoration: none; overflow-wrap: anywhere; }
+.contact-list a:hover { color: #e3b594; }
+form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.field.full { grid-column: 1 / -1; }
+label { font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: rgba(239, 232, 219, .72); }
+input, select, textarea {
+  width: 100%; min-height: 50px; padding: 12px 14px;
+  background: rgba(255, 255, 255, .05); border: 1px solid rgba(239, 232, 219, .28); color: var(--night-text);
+  border-radius: 0; -webkit-appearance: none; appearance: none;
+}
+select { background-image: linear-gradient(45deg, transparent 50%, #e3b594 50%), linear-gradient(135deg, #e3b594 50%, transparent 50%); background-position: calc(100% - 20px) 22px, calc(100% - 14px) 22px; background-size: 6px 6px; background-repeat: no-repeat; }
+select option { color: #111; }
+input[type="date"] { color-scheme: dark; }
+textarea { min-height: 110px; resize: vertical; }
+input:focus, select:focus, textarea:focus { outline: 2px solid #e3b594; outline-offset: 1px; border-color: transparent; }
+.form-note { grid-column: 1 / -1; font-size: 13px; color: rgba(239, 232, 219, .65); }
+form .btn { grid-column: 1 / -1; background: #e3b594; border-color: #e3b594; color: #1a1917; }
+form .btn:hover { background: #fff; border-color: #fff; }
+@media (max-width: 860px) { .contact .wrap { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { form { grid-template-columns: 1fr; } }
+
+/* Footer */
+footer { background: #121110; color: rgba(239, 232, 219, .7); font-size: 14px; padding: 44px 0 34px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 20px 48px; justify-content: space-between; align-items: flex-start; }
+footer .brand b { color: var(--night-text); }
+footer nav { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+footer a { text-decoration: none; } footer a:hover { color: #fff; text-decoration: underline; }
+.legal { width: 100%; border-top: 1px solid rgba(239, 232, 219, .14); padding-top: 20px; font-size: 12.5px; color: rgba(239, 232, 219, .55); }
+
+/* Scroll reveal (disabled when the visitor prefers reduced motion) */
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+.reveal.in { opacity: 1; transform: none; }
+.steps-art figure { opacity: 0; transform: translateY(26px); animation: rise 1.1s var(--ease) forwards; }
+.steps-art .s2 { animation-delay: .18s; } .steps-art .s3 { animation-delay: .36s; }
+@keyframes rise { to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal, .steps-art figure { opacity: 1; transform: none; animation: none; transition: none; }
+  .room-img img, .gallery-grid img, .btn { transition: none; }
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<!-- ============================== HEADER ============================== -->
+<header class="header" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Cascade Hotel — home"><b>Cascade</b><span>Hotel · Yerevan</span></a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#story" data-i18n="nav.story">The House</a>
+      <a href="#rooms" data-i18n="nav.rooms">Rooms</a>
+      <a href="#comforts" data-i18n="nav.comforts">Comforts</a>
+      <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+      <a href="#location" data-i18n="nav.location">Location</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true" aria-label="English">EN</button>
+      <button type="button" data-lang="hy" aria-pressed="false" aria-label="Հայերեն">ՀՅ</button>
+      <button type="button" data-lang="ru" aria-pressed="false" aria-label="Русский">RU</button>
+    </div>
+    <a class="btn" href="#contact" data-i18n="book">Book</a>
+    <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" style="padding-bottom:0">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow" data-i18n="hero.eyebrow">Yerevan · 10/10 Zarubyan Street</p>
+      <h1 data-i18n-html="hero.title">A family house, <em>seventy metres</em> from the Cascade.</h1>
+      <p class="lead" data-i18n="hero.lead">Twenty-five quiet rooms above the centre of Yerevan, looking across the city towards Mount Ararat. Breakfast is included with every stay.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#contact" data-i18n="hero.cta">Request a room</a>
+        <a class="btn ghost" href="tel:+37460400440">+374 60 400 440</a>
+      </div>
+    </div>
+
+    <!-- Three photographs arranged as rising steps -->
+    <div class="steps-art" aria-hidden="false">
+      <figure class="s1"><img src="https://www.cascadehotel.am/eng/images/index2.jpg" width="800" height="533" alt="Cascade Hotel building at dusk with lit windows" fetchpriority="high"></figure>
+      <figure class="s2"><img src="https://www.cascadehotel.am/eng/images/index3.jpg" width="800" height="533" alt="Hotel lobby and café-bar with piano"></figure>
+      <figure class="s3"><img src="https://www.cascadehotel.am/eng/images/slider-6-1.jpg" width="940" height="512" alt="Guest room with double bed"></figure>
+    </div>
+  </div>
+
+  <!-- Key facts, all taken from the hotel's own site -->
+  <div class="facts" style="margin-top:clamp(40px,6vw,84px)">
+    <ul class="wrap">
+      <li><b>25</b><span data-i18n="fact.rooms">comfortable rooms</span></li>
+      <li><b>70 m</b><span data-i18n="fact.cascade">to the Cascade Complex</span></li>
+      <li><b>24/7</b><span data-i18n="fact.bar">café-bar and room service</span></li>
+      <li><b>0.6 km</b><span data-i18n="fact.opera">to the Opera and Ballet Theatre</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================== STORY ============================== -->
+<section class="story" id="story">
+  <div class="wrap">
+    <figure class="reveal">
+      <img src="https://www.cascadehotel.am/eng/images/slider-2-1.jpg" width="940" height="519" loading="lazy" alt="Reception desk at Cascade Hotel">
+      <figcaption data-i18n="story.cap">The reception — the two hands of the emblem stand for the two founding brothers.</figcaption>
+    </figure>
+    <div class="body reveal">
+      <p class="num">01</p>
+      <p class="eyebrow" style="margin:6px 0 14px" data-i18n="story.eyebrow">The house</p>
+      <h2 style="margin-bottom:26px" data-i18n-html="story.title">Two brothers, <em>one ancestral home.</em></h2>
+      <p class="drop" data-i18n="story.p1">Cascade Hotel stands where the founders' family home once stood — a house where guests, often from other countries, were always received with generosity. The two brothers who built the hotel inherited that tradition, and the two hands in the hotel's emblem stand for their shared work.</p>
+      <p data-i18n="story.p2">A clock and a piano from the old house were brought into the sitting room, which is arranged like the living room of a home. The first impression is meant to be of a fine house rather than a hotel.</p>
+      <p data-i18n="story.p3">The building sits just off the Cascade, away from the noise of the centre: marble, fine woods and modern furniture inside, and a wide view over the city outside.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ROOMS ============================== -->
+<section class="rooms" id="rooms">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="num">02</p>
+      <p class="eyebrow" data-i18n="rooms.eyebrow">Rooms &amp; suites</p>
+      <h2 data-i18n-html="rooms.title">Four ways <em>to stay.</em></h2>
+    </div>
+
+    <article class="room reveal">
+      <div class="room-img"><img src="https://www.cascadehotel.am/eng/images/rooms-1.jpg" width="598" height="477" loading="lazy" alt="Executive Suite: two-level room with sitting area and stairs to the bed level"></div>
+      <div>
+        <p class="tag" data-i18n="r1.tag">Two levels · King-size bed</p>
+        <h3 data-i18n="r1.name">Executive Suite</h3>
+        <p data-i18n="r1.text">A room on two levels: a living and sitting area below, the bed area above. The layout gives the suite a privacy and convenience of its own.</p>
+        <ul class="chips"><li data-i18n="c.balcony">Balcony</li><li data-i18n="c.minibar">Minibar</li><li data-i18n="c.breakfast">Breakfast included</li></ul>
+        <a class="link" href="#contact" data-room="Executive Suite" data-i18n="rooms.ask">Request this room</a>
+      </div>
+    </article>
+
+    <article class="room reveal">
+      <div class="room-img"><img src="https://www.cascadehotel.am/eng/images/rooms-3.jpg" width="598" height="484" loading="lazy" alt="Family Suite: sitting area with sofa, bed area behind a privacy wall"></div>
+      <div>
+        <p class="tag" data-i18n="r2.tag">For families · Double bed</p>
+        <h3 data-i18n="r2.name">Family Suite</h3>
+        <p data-i18n="r2.text">A living area separated from the bed by a privacy wall, and a balcony with a table and chairs — a place to rest and talk outdoors without leaving your room.</p>
+        <ul class="chips"><li data-i18n="c.balconyTable">Balcony with table</li><li data-i18n="c.living">Living area</li><li data-i18n="c.breakfast">Breakfast included</li></ul>
+        <a class="link" href="#contact" data-room="Family Suite" data-i18n="rooms.ask">Request this room</a>
+      </div>
+    </article>
+
+    <article class="room reveal">
+      <div class="room-img"><img src="https://www.cascadehotel.am/eng/images/rooms-2.jpg" width="598" height="474" loading="lazy" alt="Deluxe room with double bed"></div>
+      <div>
+        <p class="tag" data-i18n="r3.tag">Double or twin · Ararat view</p>
+        <h3 data-i18n="r3.name">Deluxe</h3>
+        <p data-i18n="r3.text">Windows open onto the city centre and face Mount Ararat. The view is at its best in the evening, when Yerevan is lit below.</p>
+        <ul class="chips"><li data-i18n="c.cityView">City-centre view</li><li data-i18n="c.balcony">Balcony</li><li data-i18n="c.breakfast">Breakfast included</li></ul>
+        <a class="link" href="#contact" data-room="Deluxe" data-i18n="rooms.ask">Request this room</a>
+      </div>
+    </article>
+
+    <article class="room reveal">
+      <div class="room-img"><img src="https://www.cascadehotel.am/eng/images/rooms-4.jpg" width="598" height="473" loading="lazy" alt="Standard room with twin beds"></div>
+      <div>
+        <p class="tag" data-i18n="r4.tag">Single, double or twin</p>
+        <h3 data-i18n="r4.name">Standard</h3>
+        <p data-i18n="r4.text">For travelling alone or with a friend: the Standard comes as a single, double or twin room, each with a view over the centre of the city.</p>
+        <ul class="chips"><li data-i18n="c.cityView">City-centre view</li><li data-i18n="c.balcony">Balcony</li><li data-i18n="c.breakfast">Breakfast included</li></ul>
+        <a class="link" href="#contact" data-room="Standard" data-i18n="rooms.ask">Request this room</a>
+      </div>
+    </article>
+
+    <div class="all-rooms reveal">
+      <h3 data-i18n="all.title">In every room</h3>
+      <ul>
+        <li data-i18n="a.wifi">Free Wi-Fi</li>
+        <li data-i18n="a.balcony">Balcony</li>
+        <li data-i18n="a.minibar">Minibar and refrigerator</li>
+        <li data-i18n="a.safe">Room safe</li>
+        <li data-i18n="a.tv">Satellite TV</li>
+        <li data-i18n="a.bath">Fully equipped bathroom</li>
+        <li data-i18n="a.hair">Hair-dryer</li>
+        <li data-i18n="a.sound">Sound insulation</li>
+        <li data-i18n="a.phone">External and internal telephone</li>
+        <li data-i18n="a.fire">Fire alarm</li>
+      </ul>
+    </div>
+    <p class="note" data-i18n="rooms.note">A continental breakfast is served every morning and is included in the price of every room. Current rates are confirmed by the hotel when you send a request.</p>
+  </div>
+</section>
+
+<!-- ============================== COMFORTS ============================== -->
+<section class="comforts dark" id="comforts">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="num" style="color:rgba(239,232,219,.6)">03</p>
+      <p class="eyebrow" data-i18n="com.eyebrow">Hotel comforts</p>
+      <h2 data-i18n-html="com.title">Everything <em>close at hand.</em></h2>
+    </div>
+    <ul class="grid reveal">
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 13h20l-2-6H8l-2 6zM5 13v9h3v-3h16v3h3v-9"/><circle cx="10" cy="17" r="1.4"/><circle cx="22" cy="17" r="1.4"/></svg>
+        <h3 data-i18n="f1.t">Free parking</h3><p data-i18n="f1.d">Parking spaces in front of the hotel.</p></li>
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 12a18 18 0 0 1 24 0M8 17a12 12 0 0 1 16 0M12 22a6 6 0 0 1 8 0"/><circle cx="16" cy="26" r="1.2"/></svg>
+        <h3 data-i18n="f2.t">Free Wi-Fi</h3><p data-i18n="f2.d">Throughout the hotel and in all rooms.</p></li>
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 12h15v7a6 6 0 0 1-6 6h-3a6 6 0 0 1-6-6v-7zM22 14h2a3 3 0 0 1 0 6h-2M11 5v3M15 4v4M19 5v3"/></svg>
+        <h3 data-i18n="f3.t">Café-bar, 24/7</h3><p data-i18n="f3.d">Drinks, juices and aperitifs at any hour.</p></li>
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 23h24M6 23a10 10 0 0 1 20 0M16 9v4"/><circle cx="16" cy="8" r="1.4"/></svg>
+        <h3 data-i18n="f4.t">24-hour room service</h3><p data-i18n="f4.d">Available day and night.</p></li>
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11"/><path d="M16 9v14M19.5 12.5c-1-1.6-6.500-1.800-6.500 1 0 3 7 1.600 7 4.800 0 2.700-5.800 2.800-7 .7"/></svg>
+        <h3 data-i18n="f5.t">ATM &amp; currency exchange</h3><p data-i18n="f5.d">Available 24 hours a day.</p></li>
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4v24M5.600 10l20.800 12M26.400 10 5.600 22M13 6l3 3 3-3M13 26l3-3 3 3"/></svg>
+        <h3 data-i18n="f6.t">Air conditioning</h3><p data-i18n="f6.d">Full air conditioning with temperature control.</p></li>
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="18" r="8"/><path d="M4 18h3M25 18h3M16 6v4M11 18a5 5 0 0 1 5-5"/></svg>
+        <h3 data-i18n="f7.t">Breakfast included</h3><p data-i18n="f7.d">Continental breakfast served every morning.</p></li>
+      <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 26h6v-5h6v-5h6v-5h6"/></svg>
+        <h3 data-i18n="f8.t">Beside the Cascade</h3><p data-i18n="f8.d">About 70 m from the stairway and the Cafesjian art centre.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================== GALLERY ============================== -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="num">04</p>
+      <p class="eyebrow" data-i18n="gal.eyebrow">Gallery</p>
+      <h2 data-i18n-html="gal.title">A look <em>inside.</em></h2>
+    </div>
+    <!-- Each button opens the lightbox; data-full is the large image -->
+    <div class="gallery-grid reveal" id="galleryGrid">
+      <button type="button" class="wide tall" data-full="https://www.cascadehotel.am/eng/images/slider-1-1.jpg"><img src="https://www.cascadehotel.am/eng/images/slider-1-1.jpg" loading="lazy" width="940" height="518" alt="Hotel courtyard and entrance in the evening"></button>
+      <button type="button" data-full="https://www.cascadehotel.am/eng/images/slider-4-1.jpg"><img src="https://www.cascadehotel.am/eng/images/slider-4-1.jpg" loading="lazy" width="940" height="511" alt="Lobby lounge and café-bar"></button>
+      <button type="button" data-full="https://www.cascadehotel.am/eng/images/slider-5-1.jpg"><img src="https://www.cascadehotel.am/eng/images/slider-5-1.jpg" loading="lazy" width="940" height="525" alt="Suite sitting area with sofa and coffee table"></button>
+      <button type="button" class="wide" data-full="https://www.cascadehotel.am/eng/images/slider-6-1.jpg"><img src="https://www.cascadehotel.am/eng/images/slider-6-1.jpg" loading="lazy" width="940" height="512" alt="Bedroom with double bed and gold curtains"></button>
+      <button type="button" data-full="https://www.cascadehotel.am/eng/images/slider-3-1.jpg"><img src="https://www.cascadehotel.am/eng/images/slider-3-1.jpg" loading="lazy" width="940" height="551" alt="A glass of sparkling wine in the lobby lounge"></button>
+      <button type="button" data-full="https://www.cascadehotel.am/eng/images/index1.jpg"><img src="https://www.cascadehotel.am/eng/images/index1.jpg" loading="lazy" width="400" height="600" alt="Hotel façade, five storeys, at dusk"></button>
+      <button type="button" class="wide" data-full="https://www.cascadehotel.am/eng/images/nearby4_large.jpg"><img src="https://www.cascadehotel.am/eng/images/nearby4_large.jpg" loading="lazy" width="578" height="327" alt="The Cascade stairway and sculpture garden"></button>    </div>
+
+    <!-- Placeholder: real guest reviews are added only with the hotel's approval -->
+    <p class="placeholder" data-i18n="rev.placeholder">Guest reviews — this space is reserved for the hotel's live Booking.com and Google ratings, to be connected at launch.</p>
+  </div>
+</section>
+
+<!-- ============================== LOCATION ============================== -->
+<section class="location" id="location" style="padding-top:0">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="num">05</p>
+      <p class="eyebrow" style="margin:6px 0 14px" data-i18n="loc.eyebrow">Location</p>
+      <h2 style="margin-bottom:30px" data-i18n-html="loc.title">Step out, and <em>the city begins.</em></h2>
+      <ol class="stairs">
+        <li><span data-i18n="d1">The Cascade Complex</span><b>70 m</b></li>
+        <li><span data-i18n="d2">Opera and Ballet Theatre</span><b>0.6 km</b></li>
+        <li><span data-i18n="d3">Nearest metro station</span><b>1 km</b></li>
+        <li><span data-i18n="d4">Railway station</span><b>4.7 km</b></li>
+        <li><span data-i18n="d5">Airport</span><b>13.5 km</b></li>
+      </ol>
+      <address class="address">
+        <strong>Cascade Hotel</strong>
+        <span data-i18n="addr">10/10 Zarubyan Street, 0009 Yerevan, Armenia</span>
+      </address>
+    </div>
+    <div class="map reveal">
+      <iframe title="Map: Cascade Hotel, 10/10 Zarubyan Street, Yerevan" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Cascade+Hotel,+10/10+Zarubyan+Street,+Yerevan,+Armenia&z=16&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CONTACT / BOOKING ============================== -->
+<section class="contact dark" id="contact">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="num" style="color:rgba(239,232,219,.6)">06</p>
+      <p class="eyebrow" style="margin:6px 0 14px" data-i18n="con.eyebrow">Book directly</p>
+      <h2 data-i18n-html="con.title">Request <em>your room.</em></h2>
+      <p style="margin-top:18px;color:rgba(239,232,219,.75);max-width:42ch" data-i18n="con.lead">Write or call the hotel directly — the reception answers around the clock.</p>
+      <ul class="contact-list">
+        <li><small data-i18n="con.phone">Telephone</small><a href="tel:+37460400440">+374 60 400 440</a></li>
+        <li><small data-i18n="con.phone2">Telephone</small><a href="tel:+37410589535">+374 10 589 535</a></li>
+        <li><small data-i18n="con.email">E-mail</small><a href="mailto:info@cascadehotel.am">info@cascadehotel.am</a></li>
+      </ul>
+    </div>
+
+    <!-- Front-end only: on submit the request is composed into an e-mail to the hotel -->
+    <form id="bookingForm" class="reveal" novalidate>
+      <div class="field full"><label for="f-name" data-i18n="fm.name">Full name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+      <div class="field"><label for="f-email" data-i18n="fm.email">E-mail</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field"><label for="f-tel" data-i18n="fm.tel">Phone</label><input id="f-tel" name="tel" type="tel" autocomplete="tel"></div>
+      <div class="field"><label for="f-in" data-i18n="fm.in">Check-in</label><input id="f-in" name="checkin" type="date" required></div>
+      <div class="field"><label for="f-out" data-i18n="fm.out">Check-out</label><input id="f-out" name="checkout" type="date" required></div>
+      <div class="field"><label for="f-room" data-i18n="fm.room">Room type</label>
+        <select id="f-room" name="room">
+          <option value="Executive Suite" data-i18n="r1.name">Executive Suite</option>
+          <option value="Family Suite" data-i18n="r2.name">Family Suite</option>
+          <option value="Deluxe" data-i18n="r3.name">Deluxe</option>
+          <option value="Standard" data-i18n="r4.name" selected>Standard</option>
+        </select></div>
+      <div class="field"><label for="f-guests" data-i18n="fm.guests">Guests</label>
+        <select id="f-guests" name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></div>
+      <div class="field full"><label for="f-msg" data-i18n="fm.msg">Comments</label><textarea id="f-msg" name="message"></textarea></div>
+      <button class="btn" type="submit" data-i18n="fm.send">Send request by e-mail</button>
+      <p class="form-note" id="formNote" role="status" data-i18n="fm.note">The button opens your e-mail app with the request ready to send to info@cascadehotel.am.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#top"><b>Cascade</b><span>Hotel · Yerevan</span></a>
+      <p style="margin-top:12px" data-i18n="addr">10/10 Zarubyan Street, 0009 Yerevan, Armenia</p>
+      <p><a href="tel:+37460400440">+374 60 400 440</a> · <a href="mailto:info@cascadehotel.am">info@cascadehotel.am</a></p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#story" data-i18n="nav.story">The House</a>
+      <a href="#rooms" data-i18n="nav.rooms">Rooms</a>
+      <a href="#comforts" data-i18n="nav.comforts">Comforts</a>
+      <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+      <a href="#location" data-i18n="nav.location">Location</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <p class="legal">© <span id="year">2026</span> Cascade Hotel. <span data-i18n="foot.legal">Website redesign concept — photographs and facts from cascadehotel.am.</span></p>
+  </div>
+</footer>
+
+<!-- ============================== LIGHTBOX ============================== -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button type="button" class="x" aria-label="Close">×</button>
+  <button type="button" class="prev" aria-label="Previous photo">‹</button>
+  <figure><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button type="button" class="next" aria-label="Next photo">›</button>
+</div>
+
+<script>
+/* ==========================================================================
+   Translations. English lives in the HTML; Armenian and Russian are here.
+   ========================================================================== */
+var I18N = {
+  hy: {
+    "skip": "Անցնել բովանդակությանը",
+    "nav.story": "Տունը", "nav.rooms": "Սենյակներ", "nav.comforts": "Հարմարություններ", "nav.gallery": "Պատկերասրահ", "nav.location": "Տեղադրություն", "nav.contact": "Կապ",
+    "book": "Ամրագրել",
+    "hero.eyebrow": "Երևան · Զարուբյան փողոց 10/10",
+    "hero.title": "Ընտանեկան տուն՝ Կասկադից <em>յոթանասուն մետր</em> հեռու։",
+    "hero.lead": "Քսանհինգ հանգիստ սենյակ Երևանի կենտրոնում՝ քաղաքի և Արարատ լեռան տեսարանով։ Նախաճաշը ներառված է յուրաքանչյուր գիշերակացի մեջ։",
+    "hero.cta": "Ուղարկել հարցում",
+    "fact.rooms": "հարմարավետ սենյակ", "fact.cascade": "մինչև Կասկադ համալիր", "fact.bar": "սրճարան-բար և սպասարկում սենյակում", "fact.opera": "մինչև Օպերայի և բալետի թատրոն",
+    "story.cap": "Ընդունարանը. խորհրդանիշի երկու ձեռքերը հիմնադիր երկու եղբայրներն են։",
+    "story.eyebrow": "Տունը",
+    "story.title": "Երկու եղբայր, <em>մեկ հայրական տուն։</em>",
+    "story.p1": "Կասկադ հյուրանոցը կանգնած է այնտեղ, որտեղ ժամանակին հիմնադիրների հայրական տունն էր՝ մի տուն, որտեղ հյուրերին, հաճախ նաև այլ երկրներից եկածներին, միշտ ընդունում էին առատաձեռնությամբ։ Հյուրանոցը կառուցած երկու եղբայրները ժառանգել են այդ ավանդույթը, իսկ խորհրդանիշի երկու ձեռքերը նրանց համատեղ աշխատանքն են։",
+    "story.p2": "Հին տնից բերված ժամացույցն ու դաշնամուրը դրված են հյուրասրահում, որը կահավորված է տան հյուրասենյակի պես։ Առաջին տպավորությունը պետք է լինի ոչ թե հյուրանոցի, այլ գեղեցիկ տան։",
+    "story.p3": "Շենքը գտնվում է Կասկադի հարևանությամբ՝ կենտրոնի աղմուկից հեռու. ներսում՝ մարմար, ազնիվ փայտ և ժամանակակից կահույք, դրսում՝ քաղաքի լայն տեսարան։",
+    "rooms.eyebrow": "Սենյակներ և սյուիտներ",
+    "rooms.title": "Հանգստանալու <em>չորս տարբերակ։</em>",
+    "r1.tag": "Երկու մակարդակ · Քինգ-սայզ մահճակալ", "r1.name": "Էքզեքյուտիվ սյուիտ",
+    "r1.text": "Երկմակարդակ սենյակ. ներքևում՝ հյուրասենյակային հատված, վերևում՝ ննջարանային հատված։ Նման հատակագիծը սենյակին առանձնահատուկ հարմարավետություն է տալիս։",
+    "r2.tag": "Ընտանիքների համար · Երկտեղանոց մահճակալ", "r2.name": "Ընտանեկան սյուիտ",
+    "r2.text": "Հյուրասենյակային հատվածը մահճակալից բաժանված է միջնապատով, իսկ պատշգամբում սեղան և աթոռներ կան՝ հանգստանալու և զրուցելու համար՝ առանց սենյակից դուրս գալու։",
+    "r3.tag": "Երկտեղանոց կամ երկու առանձին մահճակալ · Տեսարան դեպի Արարատ", "r3.name": "Դելյուքս",
+    "r3.text": "Պատուհանները բացվում են դեպի քաղաքի կենտրոն և նայում են Արարատ լեռանը։ Տեսարանը հատկապես գեղեցիկ է երեկոյան, երբ Երևանը լուսավորված է։",
+    "r4.tag": "Մեկտեղանոց, երկտեղանոց կամ երկու առանձին մահճակալ", "r4.name": "Ստանդարտ",
+    "r4.text": "Միայնակ կամ ընկերոջ հետ ճամփորդողների համար. Ստանդարտ սենյակը լինում է մեկտեղանոց, երկտեղանոց կամ երկու առանձին մահճակալով՝ քաղաքի կենտրոնի տեսարանով։",
+    "c.balcony": "Պատշգամբ", "c.minibar": "Մինի-բար", "c.breakfast": "Նախաճաշը ներառված է", "c.balconyTable": "Պատշգամբ՝ սեղանով", "c.living": "Հյուրասենյակային հատված", "c.cityView": "Տեսարան դեպի կենտրոն",
+    "rooms.ask": "Հարցում այս սենյակի համար",
+    "all.title": "Յուրաքանչյուր սենյակում",
+    "a.wifi": "Անվճար Wi-Fi", "a.balcony": "Պատշգամբ", "a.minibar": "Մինի-բար և սառնարան", "a.safe": "Չհրկիզվող պահարան", "a.tv": "Արբանյակային հեռուստատեսություն", "a.bath": "Լիարժեք կահավորված լոգասենյակ", "a.hair": "Վարսահարդարիչ", "a.sound": "Ձայնամեկուսացում", "a.phone": "Ներքին և արտաքին հեռախոս", "a.fire": "Հակահրդեհային ազդանշան",
+    "rooms.note": "Ամեն առավոտ մատուցվում է կոնտինենտալ նախաճաշ, որը ներառված է բոլոր սենյակների գնի մեջ։ Ընթացիկ գները հյուրանոցը հաստատում է Ձեր հարցումը ստանալուց հետո։",
+    "com.eyebrow": "Հյուրանոցի հարմարությունները",
+    "com.title": "Ամեն ինչ <em>ձեռքի տակ։</em>",
+    "f1.t": "Անվճար կայանատեղի", "f1.d": "Կայանատեղիներ հյուրանոցի դիմաց։",
+    "f2.t": "Անվճար Wi-Fi", "f2.d": "Ամբողջ հյուրանոցում և բոլոր սենյակներում։",
+    "f3.t": "Սրճարան-բար՝ 24/7", "f3.d": "Ըմպելիքներ, հյութեր և ապերիտիվներ ցանկացած ժամի։",
+    "f4.t": "Շուրջօրյա սպասարկում սենյակում", "f4.d": "Հասանելի է գիշեր-ցերեկ։",
+    "f5.t": "Բանկոմատ և արտարժույթի փոխանակում", "f5.d": "Աշխատում է 24 ժամ։",
+    "f6.t": "Օդորակում", "f6.d": "Ամբողջական օդորակում՝ ջերմաստիճանի կարգավորմամբ։",
+    "f7.t": "Նախաճաշը ներառված է", "f7.d": "Կոնտինենտալ նախաճաշ ամեն առավոտ։",
+    "f8.t": "Կասկադի կողքին", "f8.d": "Մոտ 70 մ աստիճաններից և Գաֆէսճեան արվեստի կենտրոնից։",
+    "gal.eyebrow": "Պատկերասրահ", "gal.title": "Հայացք <em>ներսից։</em>",
+    "rev.placeholder": "Հյուրերի կարծիքներ — այս հատվածը նախատեսված է հյուրանոցի Booking.com և Google գնահատականների համար, որոնք կմիացվեն կայքի գործարկման ժամանակ։",
+    "loc.eyebrow": "Տեղադրություն", "loc.title": "Մեկ քայլ, և <em>քաղաքը Ձեր առջև է։</em>",
+    "d1": "Կասկադ համալիր", "d2": "Օպերայի և բալետի թատրոն", "d3": "Մոտակա մետրոյի կայարան", "d4": "Երկաթուղային կայարան", "d5": "Օդանավակայան",
+    "addr": "Զարուբյան փողոց 10/10, 0009 Երևան, Հայաստան",
+    "con.eyebrow": "Ամրագրեք ուղիղ հյուրանոցից", "con.title": "Ուղարկեք <em>Ձեր հարցումը։</em>",
+    "con.lead": "Գրեք կամ զանգահարեք անմիջապես հյուրանոց. ընդունարանը աշխատում է շուրջօրյա։",
+    "con.phone": "Հեռախոս", "con.phone2": "Հեռախոս", "con.email": "Էլ. փոստ",
+    "fm.name": "Անուն, ազգանուն", "fm.email": "Էլ. փոստ", "fm.tel": "Հեռախոս", "fm.in": "Ժամանում", "fm.out": "Մեկնում", "fm.room": "Սենյակի տեսակը", "fm.guests": "Հյուրերի թիվը", "fm.msg": "Մեկնաբանություն",
+    "fm.send": "Ուղարկել հարցումը էլ. փոստով",
+    "fm.note": "Կոճակը բացում է Ձեր էլ. փոստի ծրագիրը՝ info@cascadehotel.am հասցեին ուղարկելու պատրաստ հարցումով։",
+    "fm.err": "Խնդրում ենք լրացնել անունը, էլ. փոստը և ամսաթվերը։",
+    "foot.legal": "Կայքի վերաձևավորման նախագիծ. լուսանկարները և տվյալները՝ cascadehotel.am կայքից։"
+  },
+  ru: {
+    "skip": "Перейти к содержанию",
+    "nav.story": "Дом", "nav.rooms": "Номера", "nav.comforts": "Удобства", "nav.gallery": "Галерея", "nav.location": "Расположение", "nav.contact": "Контакты",
+    "book": "Бронь",
+    "hero.eyebrow": "Ереван · улица Зарубяна, 10/10",
+    "hero.title": "Семейный дом в <em>семидесяти метрах</em> от Каскада.",
+    "hero.lead": "Двадцать пять тихих номеров в центре Еревана с видом на город и гору Арарат. Завтрак включён в стоимость каждого проживания.",
+    "hero.cta": "Отправить запрос",
+    "fact.rooms": "комфортабельных номеров", "fact.cascade": "до комплекса «Каскад»", "fact.bar": "кафе-бар и обслуживание в номерах", "fact.opera": "до Театра оперы и балета",
+    "story.cap": "Стойка регистрации. Две руки на эмблеме — два брата-основателя.",
+    "story.eyebrow": "Дом",
+    "story.title": "Два брата, <em>один родовой дом.</em>",
+    "story.p1": "Отель «Каскад» стоит на месте родового дома его основателей — дома, где гостей, нередко из других стран, всегда принимали щедро. Два брата, построившие отель, унаследовали эту традицию, а две руки на эмблеме символизируют их общее дело.",
+    "story.p2": "Часы и пианино из старого дома перенесли в гостиную отеля, обставленную как жилая комната. Первое впечатление должно быть не об отеле, а о красивом доме.",
+    "story.p3": "Здание расположено рядом с Каскадом, в стороне от шума центра: внутри — мрамор, ценные породы дерева и современная мебель, снаружи — широкий вид на город.",
+    "rooms.eyebrow": "Номера и сьюты",
+    "rooms.title": "Четыре способа <em>остановиться.</em>",
+    "r1.tag": "Два уровня · Кровать king-size", "r1.name": "Представительский сьют",
+    "r1.text": "Номер в двух уровнях: внизу — гостиная зона, наверху — спальная. Такая планировка придаёт сьюту особое удобство и уединённость.",
+    "r2.tag": "Для семьи · Двуспальная кровать", "r2.name": "Семейный сьют",
+    "r2.text": "Гостиная зона отделена от кровати перегородкой, а на балконе есть стол и стулья — можно отдохнуть и поговорить на воздухе, не выходя из номера.",
+    "r3.tag": "Двуспальная или две кровати · Вид на Арарат", "r3.name": "Делюкс",
+    "r3.text": "Окна выходят на центр города и смотрят на гору Арарат. Вид особенно хорош вечером, когда Ереван залит огнями.",
+    "r4.tag": "Одноместный, двухместный или твин", "r4.name": "Стандарт",
+    "r4.text": "Для тех, кто путешествует один или с другом: стандартный номер бывает одноместным, двухместным или с двумя кроватями, с видом на центр города.",
+    "c.balcony": "Балкон", "c.minibar": "Мини-бар", "c.breakfast": "Завтрак включён", "c.balconyTable": "Балкон со столом", "c.living": "Гостиная зона", "c.cityView": "Вид на центр города",
+    "rooms.ask": "Запросить этот номер",
+    "all.title": "В каждом номере",
+    "a.wifi": "Бесплатный Wi-Fi", "a.balcony": "Балкон", "a.minibar": "Мини-бар и холодильник", "a.safe": "Сейф", "a.tv": "Спутниковое ТВ", "a.bath": "Полностью оборудованная ванная", "a.hair": "Фен", "a.sound": "Звукоизоляция", "a.phone": "Внутренний и городской телефон", "a.fire": "Пожарная сигнализация",
+    "rooms.note": "Континентальный завтрак подаётся каждое утро и включён в стоимость всех номеров. Актуальные цены отель подтверждает в ответ на ваш запрос.",
+    "com.eyebrow": "Удобства отеля",
+    "com.title": "Всё <em>под рукой.</em>",
+    "f1.t": "Бесплатная парковка", "f1.d": "Парковочные места перед отелем.",
+    "f2.t": "Бесплатный Wi-Fi", "f2.d": "На всей территории отеля и во всех номерах.",
+    "f3.t": "Кафе-бар 24/7", "f3.d": "Напитки, соки и аперитивы в любое время.",
+    "f4.t": "Обслуживание в номерах 24 часа", "f4.d": "Доступно днём и ночью.",
+    "f5.t": "Банкомат и обмен валюты", "f5.d": "Работает круглосуточно.",
+    "f6.t": "Кондиционирование", "f6.d": "Полное кондиционирование с регулировкой температуры.",
+    "f7.t": "Завтрак включён", "f7.d": "Континентальный завтрак каждое утро.",
+    "f8.t": "Рядом с Каскадом", "f8.d": "Около 70 м от лестницы и Центра искусств Гафесчяна.",
+    "gal.eyebrow": "Галерея", "gal.title": "Взгляд <em>изнутри.</em>",
+    "rev.placeholder": "Отзывы гостей — здесь будут показаны актуальные оценки отеля на Booking.com и Google, которые подключаются при запуске сайта.",
+    "loc.eyebrow": "Расположение", "loc.title": "Шаг за порог — <em>и вы в городе.</em>",
+    "d1": "Комплекс «Каскад»", "d2": "Театр оперы и балета", "d3": "Ближайшая станция метро", "d4": "Железнодорожный вокзал", "d5": "Аэропорт",
+    "addr": "ул. Зарубяна, 10/10, 0009 Ереван, Армения",
+    "con.eyebrow": "Бронируйте напрямую", "con.title": "Запросите <em>свой номер.</em>",
+    "con.lead": "Напишите или позвоните в отель напрямую — стойка регистрации работает круглосуточно.",
+    "con.phone": "Телефон", "con.phone2": "Телефон", "con.email": "Эл. почта",
+    "fm.name": "Имя и фамилия", "fm.email": "Эл. почта", "fm.tel": "Телефон", "fm.in": "Заезд", "fm.out": "Выезд", "fm.room": "Тип номера", "fm.guests": "Гостей", "fm.msg": "Комментарий",
+    "fm.send": "Отправить запрос по эл. почте",
+    "fm.note": "Кнопка откроет вашу почтовую программу с готовым запросом на адрес info@cascadehotel.am.",
+    "fm.err": "Пожалуйста, укажите имя, эл. почту и даты.",
+    "foot.legal": "Концепция редизайна сайта. Фотографии и сведения — с сайта cascadehotel.am."
+  }
+};
+I18N.en = { "fm.err": "Please fill in your name, e-mail and dates." };
+
+(function () {
+  "use strict";
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+  /* ---------- Language switcher ---------- */
+  var textNodes = $$("[data-i18n]"), htmlNodes = $$("[data-i18n-html]");
+  // Capture the English source text from the markup once
+  textNodes.forEach(function (el) { var k = el.getAttribute("data-i18n"); if (!(k in I18N.en)) I18N.en[k] = el.textContent; });
+  htmlNodes.forEach(function (el) { var k = el.getAttribute("data-i18n-html"); if (!(k in I18N.en)) I18N.en[k] = el.innerHTML; });
+  var current = "en";
+  function t(key) { return (I18N[current] && I18N[current][key]) || I18N.en[key] || ""; }
+  function setLang(lang) {
+    if (!I18N[lang]) lang = "en";
+    current = lang;
+    document.documentElement.lang = lang;
+    textNodes.forEach(function (el) { el.textContent = t(el.getAttribute("data-i18n")); });
+    htmlNodes.forEach(function (el) { el.innerHTML = t(el.getAttribute("data-i18n-html")); });
+    $$(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang)); });
+    try { localStorage.setItem("cascade-lang", lang); } catch (e) { /* storage may be blocked */ }
+  }
+  $$(".lang button").forEach(function (b) { b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); }); });
+  var saved = null;
+  try { saved = localStorage.getItem("cascade-lang"); } catch (e) {}
+  if (!saved) { var nl = (navigator.language || "en").slice(0, 2).toLowerCase(); saved = (nl === "hy" || nl === "ru") ? nl : "en"; }
+  if (saved !== "en") setLang(saved);
+
+  /* ---------- Header: shadow on scroll, mobile menu ---------- */
+  var header = $(".header"), nav = $("#nav"), menuBtn = $(".menu-btn");
+  function onScroll() { header.classList.toggle("scrolled", window.scrollY > 8); }
+  window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+  function closeMenu() { nav.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); }
+  menuBtn.addEventListener("click", function () {
+    var open = nav.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", String(open));
+  });
+  $$("a", nav).forEach(function (a) { a.addEventListener("click", closeMenu); });
+
+  /* ---------- Reveal on scroll ---------- */
+  var reveals = $$(".reveal");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else { reveals.forEach(function (el) { el.classList.add("in"); }); }
+
+  /* ---------- "Request this room" pre-selects the room in the form ---------- */
+  $$("[data-room]").forEach(function (a) {
+    a.addEventListener("click", function () { $("#f-room").value = a.getAttribute("data-room"); });
+  });
+
+  /* ---------- Gallery lightbox (keyboard: Esc, arrows) ---------- */
+  var items = $$("#galleryGrid button"), lb = $("#lightbox"), lbImg = $("#lbImg"), lbCap = $("#lbCap"), idx = 0, lastFocus = null;
+  function show(i) {
+    idx = (i + items.length) % items.length;
+    var thumb = $("img", items[idx]);
+    lbImg.src = items[idx].getAttribute("data-full");
+    lbImg.alt = thumb.alt;
+    lbCap.textContent = thumb.alt + "  ·  " + (idx + 1) + " / " + items.length;
+  }
+  function openLb(i) { lastFocus = document.activeElement; show(i); lb.classList.add("open"); document.body.style.overflow = "hidden"; $(".x", lb).focus(); }
+  function closeLb() { lb.classList.remove("open"); document.body.style.overflow = ""; if (lastFocus) lastFocus.focus(); }
+  items.forEach(function (b, i) { b.addEventListener("click", function () { openLb(i); }); });
+  $(".x", lb).addEventListener("click", closeLb);
+  $(".prev", lb).addEventListener("click", function () { show(idx - 1); });
+  $(".next", lb).addEventListener("click", function () { show(idx + 1); });
+  lb.addEventListener("click", function (e) { if (e.target === lb) closeLb(); });
+  document.addEventListener("keydown", function (e) {
+    if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") closeLb();
+    else if (e.key === "ArrowLeft") show(idx - 1);
+    else if (e.key === "ArrowRight") show(idx + 1);
+    else if (e.key === "Tab") { // keep focus inside the dialog
+      var f = $$("button", lb), first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+
+  /* ---------- Booking request → mailto: ---------- */
+  var form = $("#bookingForm"), note = $("#formNote");
+  var today = new Date().toISOString().slice(0, 10);
+  $("#f-in").min = today; $("#f-out").min = today;
+  $("#f-in").addEventListener("change", function () { $("#f-out").min = this.value || today; });
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var d = new FormData(form), g = function (k) { return (d.get(k) || "").toString().trim(); };
+    if (!g("name") || !g("email") || !g("checkin") || !g("checkout")) {
+      note.textContent = t("fm.err"); note.style.color = "#f0b7a6";
+      var firstEmpty = $$("[required]", form).filter(function (el) { return !el.value; })[0];
+      if (firstEmpty) firstEmpty.focus();
+      return;
+    }
+    var subject = "Booking request — " + g("room") + ", " + g("checkin") + " to " + g("checkout");
+    var body = [
+      "Booking request for Cascade Hotel", "",
+      "Name: " + g("name"), "E-mail: " + g("email"), "Phone: " + g("tel"),
+      "Check-in: " + g("checkin"), "Check-out: " + g("checkout"),
+      "Room type: " + g("room"), "Guests: " + g("guests"), "",
+      "Comments: " + g("message")
+    ].join("\n");
+    window.location.href = "mailto:info@cascadehotel.am?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  });
+
+  $("#year").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

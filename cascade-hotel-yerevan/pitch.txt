@@ -1,0 +1,21 @@
+PITCH — CASCADE HOTEL, YEREVAN
+Send to: info@cascadehotel.am  |  +374 60 400 440
+Attach or link: index.html (the finished redesign)
+
+==================== ՀԱՅԵՐԵՆ ====================
+
+Բարև Ձեզ,
+
+Ձեր հյուրանոցը հյուրերի կողմից շատ բարձր է գնահատվում ամրագրման հարթակներում, բայց cascadehotel.am կայքը դա ցույց չի տալիս. այն պատրաստվել է 2013 թվականին և այդ ժամանակից չի թարմացվել։ Կայքը հարմարեցված չէ հեռախոսի համար (էկրանին երևում է համակարգչային տարբերակը՝ շատ փոքր տառերով), չունի հայերեն տարբերակ, իսկ էջի ներքևի հղումները ոչ մի տեղ չեն տանում։ Էջի ներքևում դեռ գրված է «2013», ամրագրման ձևում ամսաթիվը պետք է ձեռքով գրել երեք առանձին դաշտում, և գլխավոր էջը որոնողական համակարգերի համար նշված է «չինդեքսավորել»։ Ես արդեն պատրաստել եմ Ձեր կայքի ամբողջովին նոր տարբերակը՝ Ձեր իսկ լուսանկարներով և տեքստերով. այն ճիշտ է բացվում հեռախոսով, ունի հայերեն, անգլերեն և ռուսերեն լեզուներ, «Ամրագրել» կոճակ յուրաքանչյուր էկրանին, օրացույցով ամրագրման հարցում, Google քարտեզ և լուսանկարների պատկերասրահ։ Կցում եմ պատրաստի կայքը, որպեսզի ինքներդ տեսնեք. եթե հավանեք, այն կտեղադրեմ Ձեր դոմեյնում 50 000 դրամով։
+
+Հարգանքով՝
+[Ձեր անունը, հեռախոսը]
+
+==================== ENGLISH ====================
+
+Hello,
+
+Guests rate your hotel very highly on the booking platforms, but cascadehotel.am does not show it: the site was built in 2013 and has not been updated since. It is not adapted for phones (visitors get the desktop layout in tiny text), there is no Armenian version, and the footer links lead nowhere. The footer still reads "2013", the booking form makes guests type the date by hand into three separate boxes, and the entry page is marked "noindex" for search engines. I have already built a complete new version of your site using your own photographs and texts: it works properly on a phone, comes in Armenian, English and Russian, has a "Book" button on every screen, a booking request with a date picker, a Google map and a photo gallery. The finished site is attached so you can judge it for yourself — if you like it, I will put it live on your domain for 50,000 AMD.
+
+Best regards,
+[Your name, phone]
